@@ -1,3 +1,79 @@
-.products {
-  background-color: white;
+.products-section {
+  padding: 0 0 100px 0;
+}
+.products-title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  text-align: center;
+  margin-bottom: 58px;
+  color: #07484a;
+}
+// .products_list-wrap {
+// }
+// .products_list {
+// }
+.products_list-item:nth-child(1) {
+  max-width: 431px;
+  background: #caf3e5;
+  border-radius: 16px;
+  padding: 84px 40px 60px 40px;
+}
+.products_list-item:nth-child(2) {
+  max-width: 431px;
+  background: #e0eff6;
+  border-radius: 16px;
+  padding: 84px 40px 60px 40px;
+  img {
+    margin-left: 60px;
+  }
+}
+.products_list-item:nth-child(3) {
+  max-width: 431px;
+  background: #eeebff;
+  border-radius: 16px;
+  padding: 84px 40px 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.products_list-item:nth-child(4) {
+  max-width: 431px;
+  background: #fff4e7;
+  border-radius: 16px;
+  padding: 84px 40px 60px 40px;
+  img {
+    margin-left: 82px;
+  }
+}
+.products_list-item-img {
+  margin-bottom: 40px;
+}
+.products_lits-item_name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #70908b;
+  margin-bottom: 28px;
+}
+.products_list-item_text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #70908b;
+  margin-bottom: 18px;
+}
+.products_list-item_price {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #70908b;
 }
