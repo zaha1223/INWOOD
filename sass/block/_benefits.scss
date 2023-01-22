@@ -1,3 +1,60 @@
-.benefits {
-  background-color: white;
+.benefit {
+  padding: 105px 0;
+  background: #E0EFF6;
+}
+.benefit * {
+  text-align: center;
+}
+.benefit__title {
+  font-size: 64px;
+  font-family: 'Playfair Display';
+  color: #07484A;
+  margin-bottom: 114px;
+}
+.benefit__list {
+  @include flex;
+  justify-content: space-around;
+}
+.benefit__item {
+  width: 308px;
+}
+.benefit__item-icon {
+  width: 107px;
+}
+.benefit__item-title {
+  font-size: 36px;
+  font-family: 'Playfair Display';
+  color: #07484A;
+  margin: 32px 0;
+}
+.benefit__item-text {
+  font-size: 24px;
+  color: #07484A;
+}
+@media (max-width: 1024px) {
+  .benefit__title {
+    font-size: 48px;
+  }
+  .benefit__item-title {
+    font-size: 24px;
+  }
+  .benefit__item-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 730px) {
+  .benefit__title {
+    font-size: 28px;
+    margin: 0;
+  }
+  .benefit__item-title {
+    margin: 41px 0;
+  }
+  .benefit__list {
+    flex-direction: column;
+  }
+  .benefit__item-icon {
+    margin-top: 104px;
+  }
+  
 }
