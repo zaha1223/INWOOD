@@ -2,3 +2,21 @@
   display: flex;
   align-items: center;
 }
+
+@mixin fonts($weight,$size,$lineHeight,$color){
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin textCenter{
+  text-align: center;
+}
+
+@mixin btn($bg,$bdrs,$color){
+  background-color: $bg;
+  border-radius: $bdrs;
+  color: $color;
+}
