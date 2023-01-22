@@ -8,25 +8,211 @@
     <title>INWOOD</title>
   </head>
   <body>
-    <header class="site_header">
-      <div class="container">
-        <div class="header">
-          <a href="./index.html">
-            <img src="./imgs/logo1.svg" alt="site-logo" />
-          </a>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+    <div class="header-wrap">
+      <header class="site_header">
+        <div class="container">
+          <div class="header">
+            <a id="menu2" href="#">
+              <img src="./icons/menu.svg" alt="menu" />
+            </a>
+            <a href="./index.html">
+              <img src="./imgs/logo1.svg" alt="site-logo" />
+            </a>
+            <ul class="nav_list">
+              <li class="nav_list-item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="nav_list-item">
+                <a href="./index.html">Products</a>
+              </li>
+              <li class="nav_list-item">
+                <a href="./index.html">Categories</a>
+              </li>
+              <li class="nav_list-item">
+                <a href="./index.html">About</a>
+              </li>
+              <li class="nav_list-item">
+                <a href="./index.html">Contact us</a>
+              </li>
+            </ul>
+            <a class="menu-link" href="#">
+              <img src="./icons/menu.svg" alt="menu" />
+            </a>
+            <div class="laptop-modal">
+              <button class="close-btn">
+                <img src="./icons/menuclose.svg" alt="" />
+              </button>
+              <ul class="modal-list">
+                <li class="modal-item">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="modal-item">
+                  <a href="./index.html">Products</a>
+                </li>
+                <li class="modal-item">
+                  <a href="./index.html">Category</a>
+                </li>
+                <li class="modal-item">
+                  <a href="./index.html">About us</a>
+                </li>
+                <li class="modal-item">
+                  <a href="./index.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="icons-list">
+                <li class="icons-list_item">
+                  <a href="#">
+                    <img src="./icons/search.svg" alt="search_icon" />
+                  </a>
+                </li>
+                <li class="icons-list_item">
+                  <a href="#">
+                    <img src="./icons/cart.svg" alt="cart" />
+                  </a>
+                </li>
+                <li id="login" class="icons-list_item">
+                  <a href="#">
+                    <img src="./icons/login.svg" alt="login" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="login-modal">
+              <div class="form-wrapper">
+                <div class="form-top">
+                  <h5 class="form-title">login</h5>
+                  <button class="login-close_btn">
+                    <img src="./icons/loginclose.svg" alt="close" />
+                  </button>
+                </div>
+                <form class="form">
+                  <input
+                    id="user_name"
+                    class="user-name-inpt"
+                    type="text"
+                    placeholder="User Name"
+                  />
+                  <input
+                    id="password"
+                    class="user-password-inpt"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <button type="submit" class="login-btn">Log in</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero">
+            <div class="hero_content">
+              <h2 class="hero_title">
+                Exclusive Deals of Furniture Collection
+              </h2>
+              <p class="hero_text">
+                Explore different categories. Find the best deals.
+              </p>
+              <button class="hero_btn">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <main>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section class="category-section">
+        <div class="container">
+          <div class="category">
+            <h3 class="category_title">Explore by Category</h3>
+            <div class="category_content">
+              <div class="category_list-wrapper">
+                <input class="category_inpt" type="text" placeholder="Search" />
+                <div class="category_list_wrap">
+                  <ul class="category_list">
+                    <li class="category_list-item">
+                      <a href="#">Bedroom</a>
+                    </li>
+                    <li class="category_list-item">
+                      <a href="#">Dinning Room</a>
+                    </li>
+                    <li class="category_list-item">
+                      <a href="#">Meeting Room</a>
+                    </li>
+                    <li class="category_list-item">
+                      <a href="#">Workspace</a>
+                    </li>
+                    <li class="category_list-item">
+                      <a href="#">Living Room</a>
+                    </li>
+                    <li class="category_list-item">
+                      <a href="#">Kitchen</a>
+                    </li>
+                    <li class="category_list-item">
+                      <a href="#">Living Space</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="category_btn">All categories</button>
+              </div>
+              <div class="category_imgs-wrap">
+                <ul class="imgs_list">
+                  <li class="imgs_list-item">
+                    <div class="item_content">
+                      <h5 class="item_name">Bedroom</h5>
+                      <button class="item_btn">Explore</button>
+                    </div>
+                    <img src="/imgs/bedroom.png" alt="bedroom" />
+                  </li>
+                  <li class="imgs_list-item">
+                    <div class="item_content">
+                      <h5 class="item_name">Dinning Room</h5>
+                      <button class="item_btn">Explore</button>
+                    </div>
+                    <img src="/imgs/dinningroom.png" alt="dinning-room" />
+                  </li>
+                  <li class="imgs_list-item">
+                    <div class="item_content">
+                      <h5 class="item_name">Meeting Room</h5>
+                      <button class="item_btn">Explore</button>
+                    </div>
+                    <img src="/imgs/meetingroom.png" alt="meeting-room" />
+                  </li>
+                  <li class="imgs_list-item">
+                    <div class="item_content">
+                      <h5 class="item_name">Workspace</h5>
+                      <button class="item_btn">Explore</button>
+                    </div>
+                    <img src="/imgs/workspace.png" alt="workspace" />
+                  </li>
+                  <li class="imgs_list-item">
+                    <div class="item_content">
+                      <h5 class="item_name">Living Room</h5>
+                      <button class="item_btn">Explore</button>
+                    </div>
+                    <img src="/imgs/livingroom.png" alt="livingroom" />
+                  </li>
+                  <li class="imgs_list-item">
+                    <div class="item_content">
+                      <h5 class="item_name">Kitchen</h5>
+                      <button class="item_btn">Explore</button>
+                    </div>
+                    <img src="/imgs/kitchen.png" alt="kitchen" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h5>Popular Products</h5>
+        </div>
+      </section>
       <section></section>
       <section></section>
       <!-- //Muhammadqodir start -->
@@ -36,5 +222,6 @@
       <!-- //Muhammadqodir end -->
     </main>
     <footer></footer>
+    <script src="main.js"></script>
   </body>
 </html>

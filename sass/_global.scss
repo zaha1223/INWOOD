@@ -31,6 +31,9 @@ body {
   //   font-family: "Playfair Display", serif;
   margin: 0;
   background-color: #fff;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .container {
   width: 100%;
