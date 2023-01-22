@@ -36,16 +36,14 @@
   src: local(""), url("../fonts/roboto-v30-latin-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin-700.woff") format("woff");
 }
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -109,18 +107,341 @@ body {
   background-color: white;
 }
 
-.benefits {
-  background-color: white;
+.benefit {
+  padding: 105px 0;
+  background: #E0EFF6;
 }
 
-.testimonials {
-  background-color: white;
+.benefit * {
+  text-align: center;
 }
 
+.benefit__title {
+  font-size: 64px;
+  font-family: "Playfair Display";
+  color: #07484A;
+  margin-bottom: 114px;
+}
+
+.benefit__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.benefit__item {
+  width: 308px;
+}
+
+.benefit__item-icon {
+  width: 107px;
+}
+
+.benefit__item-title {
+  font-size: 36px;
+  font-family: "Playfair Display";
+  color: #07484A;
+  margin: 32px 0;
+}
+
+.benefit__item-text {
+  font-size: 24px;
+  color: #07484A;
+}
+
+@media (max-width: 1024px) {
+  .benefit__title {
+    font-size: 48px;
+  }
+  .benefit__item-title {
+    font-size: 24px;
+  }
+  .benefit__item-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 730px) {
+  .benefit__title {
+    font-size: 28px;
+    margin: 0;
+  }
+  .benefit__item-title {
+    margin: 41px 0;
+  }
+  .benefit__list {
+    flex-direction: column;
+  }
+  .benefit__item-icon {
+    margin-top: 104px;
+  }
+}
+.testimonals * {
+  color: #07484a;
+}
+
+.testimonals {
+  padding: 100px 0;
+  padding-bottom: 197px;
+}
+
+.testimonals__flex-box {
+  display: flex;
+  align-items: center;
+  gap: 97px;
+}
+
+.testimonals__title {
+  font-size: 64px;
+  font-family: "Playfair Display";
+}
+
+.testimonals__text {
+  font-size: 36px;
+  line-height: 49.03px;
+}
+
+.top {
+  margin-top: 54px;
+}
+
+.testimonals__img-box {
+  position: relative;
+}
+
+.testimonals__img-box::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: -80px;
+  display: inline-block;
+  background-image: url(/icons/Quote.svg);
+  background-repeat: no-repeat;
+  width: 161px;
+  height: 121px;
+}
+
+.center {
+  text-align: center;
+}
+
+.testimonals__bottom {
+  margin-bottom: 107px;
+}
+
+.testimonals__img {
+  width: 421px;
+  height: 410px;
+  margin-bottom: 28px;
+}
+
+.testimonals__author-title {
+  margin-top: 95px;
+  margin-bottom: 11px;
+}
+
+.testimonals__author-title,
+.testimonals__CEO-text {
+  font-size: 24px;
+}
+
+.testimonals__line-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonals__line-bold {
+  width: 120px;
+  border: 11px solid #70908b;
+}
+
+.testimonals__line {
+  width: 1200px;
+  border: 5px solid #07484a;
+  margin-right: 78px;
+}
+
+.testimonals__line-text {
+  font-family: "Roboto";
+  font-size: 18px;
+  margin-right: 17px;
+}
+
+.testimonals__line-box {
+  margin-top: 100px;
+}
+
+@media (max-width: 1024px) {
+  .testimonals__title {
+    font-size: 48px;
+  }
+  .testimonals__text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .testimonals__author-title {
+    margin-top: 65px;
+  }
+  .testimonals__line {
+    width: 550px;
+  }
+  .testimonals__flex-box {
+    gap: 51px;
+  }
+  .testimonals__img-box::before {
+    left: -30px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonals {
+    padding-bottom: 177px;
+  }
+  .top {
+    font-size: 18px;
+  }
+  .testimonals__flex-box {
+    gap: 32px;
+  }
+  .testimonals__text {
+    line-height: 23px;
+  }
+  .testimonals__author-title {
+    margin-top: 32px;
+  }
+  .testimonals__line {
+    width: 350px;
+  }
+}
+@media (max-width: 730px) {
+  .testimonals {
+    padding-bottom: 157px;
+  }
+  .testimonals__title {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  .testimonals__text {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .testimonals__flex-box {
+    flex-direction: column;
+  }
+  .testimonals__img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .testimonals__arrow,
+.testimonals__line-text {
+    display: none;
+  }
+  .testimonals__img {
+    width: 288px;
+    height: 273px;
+  }
+  .testimonals__icon {
+    width: 110px;
+    height: 80px;
+  }
+  .testimonals__author-title {
+    margin-top: 24px;
+  }
+  .testimonals__line-box {
+    margin-top: 44px;
+  }
+  .testimonals__img-box::before {
+    left: -15px;
+  }
+  .testimonals__line {
+    margin: 0;
+  }
+}
 .newsletter {
-  background-color: white;
+  display: flex;
 }
 
+.newsletter__img {
+  width: 800px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/imgs/newsletter.png);
+}
+
+.newsletter__text-box {
+  padding: 83px 120px;
+  background: #e0f6f1;
+}
+
+.newsletter__title {
+  font-size: 64px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  color: #07484a;
+}
+
+.newsletter-bold {
+  font-weight: 700;
+}
+
+.newsletter__text {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: #07484a;
+  margin-top: 25px;
+}
+
+.newsletter__input {
+  width: 500px;
+  padding: 16px 20px;
+  font-size: 24px;
+  margin: 41px 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: "Roboto";
+  background: #e0f6f1;
+}
+
+.newsletter__btn {
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  padding: 20px 71px;
+  border-radius: 6px;
+  font-family: "Roboto";
+  color: #fdfbf8;
+  background: #70908b;
+}
+
+@media (max-width: 1562px) {
+  .newsletter__img {
+    max-width: 512px;
+    height: 600px;
+  }
+}
+@media (max-width: 1562px) {
+  .newsletter__img {
+    max-width: 412px;
+    height: 500px;
+  }
+  .newsletter__text-box {
+    padding: 109px 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .newsletter__img {
+    max-width: 512px;
+    height: 600px;
+  }
+  .newsletter__title {
+    font-size: 48px;
+  }
+  .newsletter__text {
+    font-size: 18px;
+  }
+}
 .footer {
   background-color: white;
 }/*# sourceMappingURL=main.css.map */
