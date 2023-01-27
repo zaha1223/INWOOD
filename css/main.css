@@ -1469,6 +1469,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 70px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer_social {
@@ -1524,6 +1526,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

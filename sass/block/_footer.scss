@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 70px;
+  flex-wrap: wrap;
 }
 .footer_social {
   width: 405px;
@@ -42,6 +43,7 @@
 }
 .footer_links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 100px;
 }
