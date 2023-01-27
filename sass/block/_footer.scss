@@ -3,6 +3,7 @@
 }
 .footer-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 70px;
 }
@@ -42,6 +43,7 @@
 }
 .footer_links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 100px;
 }
