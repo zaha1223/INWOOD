@@ -25,3 +25,36 @@ loginLink.addEventListener("click", () => {
 loginClose.addEventListener("click", () => {
   loginModal.style.top = "-600px";
 });
+
+$(".products_list").slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+const prevBtn = document.querySelector(".slick-prev");
+prevBtn.textContent = "";
+const nextBtn = document.querySelector(".slick-next");
+nextBtn.textContent = "";

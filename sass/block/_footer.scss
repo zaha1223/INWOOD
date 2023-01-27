@@ -1,3 +1,98 @@
-.footer {
-  background-color: white;
+.site_footer {
+  padding: 100px 0 32px 0;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.footer_social {
+  width: 405px;
+}
+.footer_logo {
+  display: block;
+  margin-bottom: 21px;
+}
+.social_list {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 21px;
+}
+.address_list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.addres_name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #07484a;
+}
+.address_item {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #07484a;
+}
+.footer_links {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.account_list,
+.help_list,
+.shop_list,
+.stuff-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.account_name,
+.help_name,
+.shop_name,
+.stuff_name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #07484a;
+}
+.account_item,
+.help-item,
+.shop-item,
+.stuff-item {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #07484a;
+}
+.account_list {
+  width: 216px;
+}
+.help_list {
+  width: 229px;
+}
+.shop_list {
+  width: 194px;
+}
+.stuff-list {
+  width: 176px;
+}
+.footer_text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #07484a;
 }

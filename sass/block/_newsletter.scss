@@ -1,16 +1,11 @@
 .newsletter {
-  display: flex;
-}
-.newsletter__img {
-  width: 800px;
-  height: 600px;
+  background-color: #e0f6f1;
+  background-image: url("../../imgs/newsletter.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/imgs/newsletter.png);
+  background-position-x: calc(50% - 325px);
 }
 .newsletter__text-box {
-  padding: 83px 120px;
-  background: #e0f6f1;
+  padding: 83px 0 83px 985px;
 }
 .newsletter__title {
   font-size: 64px;
@@ -28,14 +23,17 @@
   margin-top: 25px;
 }
 .newsletter__input {
-  width: 500px;
-  padding: 16px 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
   font-size: 24px;
+  line-height: 28px;
+
+  color: #c4c4c4;
+  padding: 16px 20px;
   margin: 41px 0;
   border: none;
   border-bottom: 1px solid #000;
-  font-family: "Roboto";
-  background: #e0f6f1;
 }
 .newsletter__btn {
   cursor: pointer;
@@ -77,14 +75,15 @@
 .newsletter__img {
   width: 800px;
   height: 600px;
-  background-repeat: no-repeat;
   background-position: center;
   background-image: url(/imgs/newsletter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.newsletter__text-box {
-  padding: 83px 120px;
-  background: #e0f6f1;
-}
+// .newsletter__text-box {
+//   padding: 83px 120px;
+//   background: #e0f6f1;
+// }
 .newsletter__title {
   font-size: 64px;
   font-family: "Playfair Display";
